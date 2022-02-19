@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsFragment"
+>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/sound_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/sound"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/close_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="421dp"
+                android:text="X"
+                android:textColor="@color/red"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toEndOf="@+id/baseball_image"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/space_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="97dp"
+                android:layout_marginEnd="55dp"
+                android:layout_marginBottom="24dp"
+                android:src="@drawable/space500"
+
+                app:layout_constraintBottom_toTopOf="@+id/cowboy_image"
+                app:layout_constraintEnd_toStartOf="@+id/baseball_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sound_image" />
+
+            <TextView
+                android:id="@+id/space_price_tv"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="default"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/space_image"
+                app:layout_constraintEnd_toStartOf="@+id/baseball_image"
+                app:layout_constraintHorizontal_bias="0.354"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/space_image" />
+
+            <ImageView
+                android:id="@+id/baseball_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginBottom="25dp"
+                android:src="@drawable/baseball500"
+                android:tint="#DC4E4E4E"
+                app:layout_constraintBottom_toTopOf="@+id/cowboy_image"
+                app:layout_constraintStart_toEndOf="@+id/space_image"
+                tools:ignore="UseAppTint" />
+
+            <TextView
+                android:id="@+id/baseball_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="350"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/baseball_image"
+                app:layout_constraintEnd_toEndOf="@+id/baseball_image"
+                app:layout_constraintStart_toStartOf="@+id/baseball_image"
+                app:layout_constraintTop_toTopOf="@+id/baseball_image" />
+
+            <ImageView
+                android:id="@+id/cowboy_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="141dp"
+                android:src="@drawable/cowboy500"
+                android:tint="#DC4E4E4E"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/space_image"
+                tools:ignore="UseAppTint" />
+
+            <TextView
+                android:id="@+id/cowboy_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="750"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/cowboy_image"
+                app:layout_constraintEnd_toEndOf="@+id/cowboy_image"
+                app:layout_constraintStart_toStartOf="@+id/cowboy_image"
+                app:layout_constraintTop_toTopOf="@+id/cowboy_image" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ad"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ad_image" />
+
+            <ImageView
+                android:id="@+id/ad_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ad"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cowboy_image" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

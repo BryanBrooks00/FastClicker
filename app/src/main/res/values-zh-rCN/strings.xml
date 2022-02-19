@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">快速點擊器</string>
+    <string name="score">你的分數：</string>
+    <string name="bestScore">最好成績：</string>
+    <string name="tap">點擊開始</string>
+    <string name="record">新紀錄！</string>
+    <string name="ad">+50 分</string>
+    <string name="tryLater">再試一次</string>
+    <string name="exit">再按一次退出</string>
+</resources>

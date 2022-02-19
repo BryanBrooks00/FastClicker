@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Fast Clicker</string>
+    <string name="score"> Your Score: </string>
+    <string name="bestScore"> Best Score: </string>
+    <string name="tap"> Tap to start </string>
+    <string name="record"> New record! </string>
+    <string name="rules" translatable="false"> You should tap on the screen and dont let the circle disappear </string>
+    <string name="ad">+50 points</string>
+    <string name="tryLater"> Try again </string>
+    <string name="exit"> Press again to exit </string>
+    <string name="app_id" translatable="false">106915508174</string>
+    <string name="leaderboard_id" translatable="false">CgkIzt-kpY4DEAIQAA</string>
+</resources>
